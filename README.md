@@ -42,7 +42,7 @@ You can automatically download all subject projects by running:
 
 ```bash
 bash scripts/fetch_inputs.sh
-
+```
 This script will populate the inputs/ directory with the required project folders.
 Subject projects used in the study
 
