@@ -1,0 +1,5 @@
+::PROJECT REPORT::
+Analyzed 299 projects.
+Found 195586 comments in 1836 PYTHON files.
+Found 35006 inline comments and 160580 multiline comments.
+
