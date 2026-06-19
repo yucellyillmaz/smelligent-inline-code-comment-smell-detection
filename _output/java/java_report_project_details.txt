@@ -1,0 +1,5 @@
+::PROJECT REPORT::
+Analyzed 479 projects.
+Found 162147 comments in 2739 JAVA files.
+Found 14331 inline comments and 147817 multiline comments.
+
