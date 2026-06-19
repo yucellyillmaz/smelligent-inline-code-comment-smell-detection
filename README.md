@@ -1,8 +1,10 @@
-# Smelligent: Intelligent Detection of Inline Code Comment Smells
+# Smelligent: An Automated Labeling and Analysis Framework for Inline Code Comment Smells
 
 This repository contains the experimental code and data used in the study.
 
-The goal of this work is to automatically identify poor-quality and misleading inline code comments by leveraging natural language processing (NLP)-based embedding techniques and machine learning classifiers.
+The goal of this work is to identify poor-quality and misleading inline code comments through automated analysis techniques.
+
+The proposed framework automatically generates inline code comment smell labels using a weakly supervised, rule-based labeling mechanism and evaluates their semantic consistency through embedding-based machine learning and deep learning models.
 
 ---
 
@@ -10,25 +12,26 @@ The goal of this work is to automatically identify poor-quality and misleading i
 
 - Extraction and preprocessing of inline code comments from real-world software projects
 - Representation of comments using classical and contextual embedding methods
-- Classification of comment smells using multiple machine learning models
-- Evaluation based on accuracy, macro F1-score, MCC, Cohen’s kappa, runtime, and memory usage
+- Classification of comment smells using machine learning and deep learning models
+- Evaluation using repeated experiments, five-fold cross-validation, and multiple performance metrics including Accuracy, Macro F1-score, MCC, Cohen's kappa, runtime, and memory usage.
 
-All experiments are designed to be fully reproducible.
+All experiments are designed to be fully reproducible. The repository contains the complete implementation, embedding generation procedures, machine learning classifiers, deep learning models, and evaluation scripts used in the study.
 
 ---
 
 ## Experimental Setup
 
-- **Embedding generation:** Python 3.13.5  
-- **Classification & evaluation:** R 4.4.1  
+- **Embedding generation and deep learning experiments:** Python 3.13.5  
+- **Classification and statistical evaluation:** R 4.4.1  
 - **Hardware:** Intel Core i7-4510 @ 2.00 GHz, 8 GB RAM  
 - **OS:** Windows 10 (64-bit)  
 - **GPU:** Not used  
 
+The deep learning experiments were conducted using Google Colab to avoid local hardware limitations and to ensure consistent execution across folds and random seeds.
 
 ---
 
-## Inputs Projects
+## Experimental Projects
 
 The `inputs/` directory is reserved **exclusively** for subject project directories.  
 
@@ -42,8 +45,9 @@ You can automatically download all subject projects by running:
 
 ```bash
 bash scripts/fetch_inputs.sh
+```
 
-This script will populate the inputs/ directory with the required project folders.
+This script will populate the `inputs/` directory with the required project folders.
 Subject projects used in the study
 
 | # | Project      | Language | Repository                                                                                   |
