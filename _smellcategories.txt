@@ -1,0 +1,6 @@
+code;keyword;description
+TASK;task;comments that are task or action-oriented, indicating work to be done in the future or notes about fixes and planned actions in the code.
+IRRE;irre;comments that reduce code readability or structure quality by being overly long, repetitive, or irrelevant to the actual implementation.
+OUTD;outd;comments that have become outdated or invalid due to code changes and need to be revised to match the current version of the code.
+META;meta;comments containing meta information about the developer, version, or other contextual details rather than the code itself, sometimes misleading or unnecessary.
+CODE;code;comments that directly include source code fragments, commands, or script-like technical content instead of explanatory or descriptive remarks.
